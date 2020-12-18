@@ -15,7 +15,6 @@ describe("Repositories", () => {
     expect(isUuid(response.body.id)).toBe(true);
 
     expect(response.body).toMatchObject({
-      id: response.body.id,
       url: "https://github.com/Rocketseat/umbriel",
       title: "Umbriel",
       techs: ["Node", "Express", "TypeScript"],
