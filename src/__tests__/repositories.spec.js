@@ -10,7 +10,7 @@ describe("Repositories", () => {
         title: "Umbriel",
         url: "https://github.com/Rocketseat/umbriel",
         techs: ["Node", "Express", "TypeScript"]
-      });
+      }).expect(201);
 
     expect(isUuid(response.body.id)).toBe(true);
 
